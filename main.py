@@ -9,7 +9,7 @@ import pafy
 
 ventana = Tk()
 ventana.geometry("712x490")
-ventana.configure(background="navajo white")
+ventana.configure(background="LightCyan3")
 ventana.title("Youtube Catch")
 URLL = StringVar()
 directorio_actual = StringVar()
@@ -90,22 +90,22 @@ txtUrl.place(x = 196, y = 130)
 txtDirec = Entry(ventana, font = ('Arial', 8), textvariable = directorio_actual, width = 60)
 txtDirec.place(x = 185, y = 455)
 
-btn_direc = Button(ventana, width =  20, text = 'Change directory', bg = "pale green", command = direc)
+btn_direc = Button(ventana, width=20, text='Change directory', bg="grey82", command = direc)
 btn_direc.place(x = 287, y = 270)
 
-Label(ventana, width = 12, text = 'Destination', bg = "navajo white").place(x = 314, y = 432)
-Label(ventana, font = ('Arial', 30, 'bold'), text = 'Youtube Catcher!', fg = 'red', bg = 'navajo white').place(x = 193, y = 17)
+Label(ventana, width = 12, text = 'Destination', bg = "LightCyan3").place(x = 314, y = 432)
+Label(ventana, font = ('Arial', 30, 'bold'), text = 'Youtube Catcher!', fg='snow', bg = 'LightCyan3').place(x = 193, y = 17)
 
-btn_download = Button(ventana, width =  20, text = 'Download Video', bg = "pale green", command = lambda:myDownload("vid"))
+btn_download = Button(ventana, width =  20, text = 'Download Video', bg = "grey82", command = lambda:myDownload("vid"))
 btn_download.place(x = 287, y = 310)
 
-btn_audio = Button(ventana, width =  20, text = 'Download Audio', bg = "pale green", command = lambda:myDownload("aud"))
+btn_audio = Button(ventana, width =  20, text = 'Download Audio', bg = "grey82", command = lambda:myDownload("aud"))
 btn_audio.place(x = 287, y = 350)
 
-eti = Label(ventana,width = 12, text = 'Progress', bg = 'navajo white')
-eti.place(x = 317, y = 180)
+eti = Label(ventana,width = 14, text = 'Progress', bg = 'LightCyan3')
+eti.place(x = 350, y = 180)
 
-eti_percent = Label(ventana,width = 4, bg = 'navajo white')
+eti_percent = Label(ventana,width = 4, bg = 'LightCyan3')
 eti.place(x = 392, y = 180)
 
 prog = progressbar  = ttk.Progressbar(ventana)
